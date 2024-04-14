@@ -1,3 +1,3 @@
-module github.com/rolanbadrislamov/go-microservice-kubernetes/front-end
+module github.com/rolanbadrislamov/go-microservices-kubernetes/front-end
 
 go 1.21.0
