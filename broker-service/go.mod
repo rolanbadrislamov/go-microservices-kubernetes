@@ -1,4 +1,4 @@
-module github.com/rolanbadrislamov/go-microservice-kubernetes/broker-service
+module github.com/rolanbadrislamov/go-microservices-kubernetes/broker-service
 
 go 1.21.0
 
