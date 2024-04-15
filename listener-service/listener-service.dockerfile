@@ -7,15 +7,15 @@ COPY . /app
 
 WORKDIR /app
 
-RUN CGO_ENABLED=0 go build -o authApp ./cmd/api
+RUN CGO_ENABLED=0 go run -o listenerApp ./cmd/api
 
-RUN chmod +x /app/authApp
+RUN chmod +x /app/listenerApp
 
 # build a tiny docker image
 FROM alpine:latest
 
 RUN mkdir /app
 
-COPY --from=builder /app/authApp /app
+COPY --from=builder /app/listenerApp /app
 
-CMD [ "/app/authApp"]
+CMD [ "/app/listenerApp" ]
