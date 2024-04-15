@@ -7,15 +7,14 @@ COPY . /app
 
 WORKDIR /app
 
-RUN CGO_ENABLED=0 go build -o loggerApp ./cmd/api
+RUN CGO_ENABLED=0 go build -o loggerServiceApp ./cmd/api
 
-RUN chmod +x /app/loggerApp
-
+RUN chmod +x /app/loggerServiceApp
 
 FROM alpine:latest
 
 RUN mkdir /app
 
-COPY --from=builder /app/loggerApp /app
+COPY --from=builder /app/loggerServiceApp /app
 
-CMD [ "/app/loggerApp"]
+CMD [ "/app/loggerServiceApp"]
