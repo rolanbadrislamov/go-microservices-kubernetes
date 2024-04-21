@@ -11,6 +11,5 @@ This project comprises several small, independent microservices designed to comm
 
 ## Future Plans
 - **Kubernetes Deployment**: Integration with Kubernetes for containerized deployment and orchestration.
-- **Learning Focus**: Currently in the learning phase for Kubernetes deployment implementation.
 
 ![In Progress](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGtmOWxzaW54M211Y2tpZnZiemlsNGl3OTR0NG9ra2JxOTluOTRtNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JomVilU47wifhL9FSQ/giphy.gif)
